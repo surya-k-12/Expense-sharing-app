@@ -94,3 +94,24 @@ A modern, real-time expense sharing application built with React and Supabase. S
 
 ## 📋 Database Schema
 
+-- Users Table
+users (id, email, username, full_name, profile_picture_url, created_at, updated_at)
+
+-- Groups Table
+groups (id, group_name, description, created_by, created_at, updated_at)
+
+-- Group Members Table
+group_members (id, group_id, user_id, joined_at)
+
+-- Expenses Table
+expenses (id, group_id, paid_by, description, amount, split_type, created_at, updated_at)
+
+-- Expense Splits Table
+expense_splits (id, expense_id, user_id, amount, percentage, created_at)
+
+-- Balances Table
+balances (id, group_id, creditor_id, debtor_id, amount, created_at, updated_at)
+
+-- Settlements Table
+settlements (id, group_id, from_user, to_user, amount, settled_at)
+
