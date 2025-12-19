@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# 💰 Expense Splitter App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, real-time expense sharing application built with React and Supabase. Split expenses with friends, track balances, and settle dues efficiently.
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-18.x-blue?logo=react)
+![Supabase](https://img.shields.io/badge/Supabase-v2-green?logo=supabase)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript)
+![License](https://img.shields.io/badge/License-MIT-success)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 👤 User Management
+- ✅ Email/Password authentication via Supabase Auth
+- ✅ User profile with email and username
+- ✅ Secure session management
+- ✅ Sign up, Sign in, Sign out
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 👥 Group Management
+- ✅ Create expense groups for different occasions
+- ✅ View all user groups
+- ✅ Add/Remove members dynamically
+- ✅ Delete groups (admin only)
+- ✅ View group member details
 
-### `npm test`
+### 💸 Expense Management
+- ✅ Add expenses with detailed information
+- ✅ Three split types:
+  - **EQUAL**: Split amount equally among members
+  - **EXACT AMOUNT**: Set exact amount for each person
+  - **PERCENTAGE**: Split by percentage (must sum to 100%)
+- ✅ Dynamic member selection per expense
+- ✅ Manual amount adjustment for splits
+- ✅ Automatic split calculation
+- ✅ Expense history per group
+- ✅ Edit/Delete expenses
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 💳 Balance Tracking
+- ✅ Real-time balance calculation
+- ✅ Who owes whom tracking
+- ✅ User owes amount display
+- ✅ Owed to user amount display
+- ✅ Net balance calculation (positive/negative)
+- ✅ Balance simplification algorithm
+- ✅ Detailed balance view per group
+- ✅ Outstanding balances summary
 
-### `npm run build`
+### 🏦 Settlement Features
+- ✅ Record settlement payments
+- ✅ Settlement history with timestamps
+- ✅ Track who paid whom
+- ✅ Automatic balance updates on settlement
+- ✅ Payment tracking and verification
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 📊 Analytics & Visualization
+- ✅ Beautiful dashboard with real-time charts
+- ✅ Expense timeline (line chart)
+- ✅ Expenses by person (bar chart)
+- ✅ Split types distribution (pie chart)
+- ✅ Who owes what (bar chart)
+- ✅ Statistics cards (total, average, balance, settlements)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🎨 UI/UX Features
+- ✅ Responsive design (mobile, tablet, desktop)
+- ✅ Dark mode support (system preference detection)
+- ✅ Real-time data updates with Supabase subscriptions
+- ✅ Beautiful UI with gradients and animations
+- ✅ Loading states for all async operations
+- ✅ Input validation on all forms
+- ✅ Error handling with user-friendly messages
+- ✅ Success notifications after actions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🛠 Tech Stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Frontend
+- **React 18** - UI library
+- **React Hooks** - State management
+- **Recharts** - Data visualization charts
+- **CSS3** - Styling with gradients and animations
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Backend
+- **Supabase** - PostgreSQL database + Auth + Real-time
+- **PostgreSQL** - Relational database
+- **Row-Level Security (RLS)** - Data protection
 
 ### Deployment
+- **Vercel** - Frontend hosting with auto-deploy
+- **GitHub** - Version control
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 📋 Database Schema
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
